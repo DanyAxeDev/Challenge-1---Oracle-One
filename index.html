@@ -7,33 +7,37 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header></header>
-    <main class="apresentacao">
-        <section class="apresentacao__criptografar">
-            <textarea class="apresentacao__criptografar__textarea" placeholder="Digite seu texto" cols="30" rows="10"></textarea>
-            <div class="apresentacao__criptografar__interacao">
-                <div class="apresentacao__criptografar__interacao__aviso">
-                    <img src="assets/exclamacao.png" alt=""><p class="apresentacao__criptografar__interacao__aviso__texto">Apenas letras minúsculas e sem acento.</p>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Encriptador de texto</h1>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo__criptografar">
+            <textarea class="conteudo__criptografar__textarea" placeholder="Digite seu texto..." cols="30" rows="10"></textarea>
+            <div class="conteudo__criptografar__interacao">
+                <div class="conteudo__criptografar__interacao__aviso">
+                    <img class="conteudo__criptografar__interacao__aviso__img" src="assets/exclamacao.png" alt=""><p class="conteudo__criptografar__interacao__aviso__texto">Apenas letras minúsculas e sem acento.</p>
                 </div>
-                <div class="apresentacao__criptografar__interacao__botoes">
-                    <button class="apresentacao__criptografar__interacao__botoes__criptografar" onclick="criptografar()">Criptografar</button>
-                    <button class="apresentacao__criptografar__interacao__botoes__descriptografar">Descriptografar</button>
+                <div class="conteudo__criptografar__interacao__botoes">
+                    <button class="conteudo__criptografar__interacao__botoes__criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="conteudo__criptografar__interacao__botoes__descriptografar">Descriptografar</button>
                 </div>
             </div>
         </section>
-        <section class="apresentacao__descriptografar">
-            <p class="apresentacao__descriptografar__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</p>
-            <button class="apresentacao__descriptografar__copiar">Copiar</button>
+        <section class="conteudo__visualizacao">
+            <p class="conteudo__visualizacao__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</p>
+            <button class="conteudo__visualizacao__copiar">Copiar</button>
         </section>
-        <section class="apresentacao__descriptografar__vazio">
+        <section class="conteudo__visualizacao__vazio">
             <div>
-                <img class="apresentacao__descriptografar__vazio__img" src="assets/nenhumaMensagem.png" alt="">
-                <p class="apresentacao__descriptografar__vazio__mensagem1">Nenhuma mensagem encontrada</p>
-                <p class="apresentacao__descriptografar__vazio__mensagem2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <img class="conteudo__visualizacao__vazio__img" src="assets/nenhumaMensagem.png" alt="">
+                <p class="conteudo__visualizacao__vazio__mensagem1">Nenhuma mensagem encontrada</p>
+                <p class="conteudo__visualizacao__vazio__mensagem2">Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Desenvolvido por Daniel Machado | 2024</p>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 </html>
