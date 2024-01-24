@@ -138,7 +138,7 @@ body{
     margin: 16px 32px;
 }
 
-@media (max-width: 1277px){
+@media (max-width: 1317px){
     .apresentacao{
         flex-direction: column;
         align-items: center;
@@ -161,7 +161,7 @@ body{
         padding: 32px;
         justify-content: flex-start;
         height: auto;
-        margin: 0;
+        margin: 0px 0px 0px 0px;
     }
     .apresentacao__descriptografar__vazio__img{
         display: none;
@@ -169,4 +169,8 @@ body{
     .apresentacao__descriptografar__vazio__mensagem2{
         margin: 16px 32px 0 32px;
     }
+}
+
+@media (max-width: 768px){
+
 }
