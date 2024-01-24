@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header></header>
+    <main class="apresentacao">
+        <section class="apresentacao__criptografar">
+            <textarea class="apresentacao__criptografar__textarea" placeholder="Digite seu texto" cols="30" rows="10"></textarea>
+            <div class="apresentacao__criptografar__interacao">
+                <div class="apresentacao__criptografar__interacao__aviso">
+                    <img src="assets/exclamacao.png" alt=""><p class="apresentacao__criptografar__interacao__aviso__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="apresentacao__criptografar__interacao__botoes">
+                    <button class="apresentacao__criptografar__interacao__botoes__criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="apresentacao__criptografar__interacao__botoes__descriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="apresentacao__descriptografar">
+            <p class="apresentacao__descriptografar__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</p>
+            <button class="apresentacao__descriptografar__copiar">Copiar</button>
+        </section>
+        <section class="apresentacao__descriptografar__vazio">
+            <div>
+                <img class="apresentacao__descriptografar__vazio__img" src="assets/nenhumaMensagem.png" alt="">
+                <p class="apresentacao__descriptografar__vazio__mensagem1">Nenhuma mensagem encontrada</p>
+                <p class="apresentacao__descriptografar__vazio__mensagem2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
