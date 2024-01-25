@@ -1,11 +1,11 @@
 function criptografar(){
     let texto = document.querySelector('textarea').value
     if(texto == ''){
-        document.querySelector('.apresentacao__descriptografar').style.display = "none"
-        document.querySelector('.apresentacao__descriptografar__vazio').style.display = "flex"
+        document.querySelector('.conteudo__visualizacao').style.display = "none"
+        document.querySelector('.conteudo__visualizacao__vazio').style.display = "flex"
     }else{
-        document.querySelector('.apresentacao__descriptografar').style.display = "flex"
-        document.querySelector('.apresentacao__descriptografar__vazio').style.display = "none"
-        textoCriptografado = document.querySelector('.apresentacao__descriptografar__texto')
+        document.querySelector('.conteudo__visualizacao').style.display = "flex"
+        document.querySelector('.conteudo__visualizacao__vazio').style.display = "none"
+        textoCriptografado = document.querySelector('.conteudo__visualizacao__texto')
     }
 }
